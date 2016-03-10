@@ -7,7 +7,7 @@ class UrlMappings {
             }
         }
 
-		"/"(controller: 'torneo')
+        "/"(view:"/index")
         "500"(view:'/error')
 	}
 }

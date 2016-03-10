@@ -91,7 +91,7 @@ environments {
     }
     production {
         grails.logging.jul.usebridge = false
-        grails.serverURL = "https://torneo-barker.herokuapp.com/"
+        // TODO: grails.serverURL = "http://www.changeme.com"
     }
 }
 
@@ -115,34 +115,3 @@ log4j.main = {
            'org.hibernate',
            'net.sf.ehcache.hibernate'
 }
-
-
-// Added by the Spring Security Core plugin:
-grails.plugin.springsecurity.userLookup.userDomainClassName = 'ar.com.torneobarker.users.User'
-grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'ar.com.torneobarker.users.UserRole'
-grails.plugin.springsecurity.authority.className = 'ar.com.torneobarker.users.Role'
-
-grails {
-	tomcat {
-		jvmArgs = [
-		   "-server", "-XX:MaxPermSize=512m", "-XX:MaxNewSize=256m", "-XX:NewSize=256m",
-		   "-Xms768m", "-Xmx1024m", "-XX:SurvivorRatio=128", "-XX:MaxTenuringThreshold=0",
-		   "-XX:+UseTLAB", "-XX:+UseConcMarkSweepGC", "-XX:+CMSClassUnloadingEnabled",
-		   "-XX:+CMSIncrementalMode", "-XX:-UseGCOverheadLimit", "-XX:+ExplicitGCInvokesConcurrent"]
-	}
-}
-
-grails.plugin.springsecurity.rejectIfNoRule = true
-grails.plugin.springsecurity.fii.rejectPublicInvocations = false
-grails.plugin.springsecurity.logout.postOnly = false
-
-grails.plugin.springsecurity.controllerAnnotations.staticRules = [
-	'/':                              ['permitAll'],
-	'/index':                         ['permitAll'],
-	'/index.gsp':                     ['permitAll'],
-	'/assets/**':                     ['permitAll'],
-	'/**/js/**':                      ['permitAll'],
-	'/**/css/**':                     ['permitAll'],
-	'/**/images/**':                  ['permitAll'],
-	'/**/favicon.ico':                ['permitAll']
-]

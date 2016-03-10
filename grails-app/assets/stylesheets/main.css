@@ -49,33 +49,6 @@ body {
 
 #grailsLogo {
 	background-color: #abbf78;
-
-	background-image: url(../images/banner.jpg); 
-   background-size: 100% 100%;                     
-    background-repeat:   no-repeat;
-    background-position: bottom; center; 
-
-  }
-
-#logoImg{
-	max-width:100%;
-  	max-height:100%;
-  	padding-top: 5px;
-}
-#mainTitle{
-	font-size: 300%;
-	font-weight: 700;
-	display: inline;
-	
-}
-
-.login {
-	font-size: 110%;
-	font-weight: 400;
-	float: right;
-	padding-right: 15px;
-	padding-top: 5px;
-	display: inline;
 }
 
 /* replace with .no-boxshadow body if you have modernizr available */
@@ -118,7 +91,7 @@ img {
 
 #grailsLogo a {
 	display: inline-block;
-	margin: 0em;
+	margin: 1em;
 }
 
 .content {
@@ -211,7 +184,7 @@ img {
 	text-decoration: underline;
 }
 
-.nav a.home, .nav a.list, .nav a.create, .fixture, .posiciones, .goleadores, .fairPlay {
+.nav a.home, .nav a.list, .nav a.create {
 	background-position: 0.7em center;
 	background-repeat: no-repeat;
 	text-indent: 25px;
@@ -227,22 +200,6 @@ img {
 
 .nav a.create {
 	background-image: url(../images/skin/database_add.png);
-}
-
-.fixture {
-	background-image: url(../images/fixture.png);
-}
-
-.posiciones {
-	background-image: url(../images/posiciones.png);
-}
-
-.goleadores {
-	background-image: url(../images/goleadores.png);
-}
-
-.fairPlay {
-	background-image: url(../images/redCard.png);
 }
 
 /* CREATE/EDIT FORMS AND SHOW PAGES */
@@ -637,4 +594,3 @@ a.skip {
 	position: absolute;
 	left: -9999px;
 }
-

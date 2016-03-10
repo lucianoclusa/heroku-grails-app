@@ -44,19 +44,13 @@ grails.project.dependency.resolution = {
         //mavenRepo "http://repository.codehaus.org"
         //mavenRepo "http://download.java.net/maven/2/"
         //mavenRepo "http://repository.jboss.com/maven2/"
-		mavenRepo 'http://repo.spring.io/milestone'
-		mavenRepo "http://repo.grails.org/grails/libs-releases/"
-		mavenRepo "http://m2repo.spockframework.org/ext/"    
-		
-	}
+    }
 
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes e.g.
         // runtime 'mysql:mysql-connector-java:5.1.29'
-         runtime 'org.postgresql:postgresql:9.3-1101-jdbc41'
+        // runtime 'org.postgresql:postgresql:9.3-1101-jdbc41'
         test "org.grails:grails-datastore-test-support:1.0.2-grails-2.4"
-//		runtime  'org.postgresql:postgresql:9.3-1100-jdbc41'
-		runtime 'mysql:mysql-connector-java:5.1.16'
     }
 
     plugins {
@@ -67,11 +61,7 @@ grails.project.dependency.resolution = {
         compile ":scaffolding:2.1.2"
         compile ':cache:1.1.8'
         compile ":asset-pipeline:1.9.9"
-		compile ":modalbox:0.4"
-		compile ":jxl:0.54"
-		
-		compile ':spring-security-core:2.0-RC4'
-		
+
         // plugins needed at runtime but not for compilation
         runtime ":hibernate4:4.3.6.1" // or ":hibernate:3.6.10.18"
         runtime ":database-migration:1.4.0"
